@@ -1,4 +1,8 @@
-a= int(input(print(" Enter your profile:\n 1. Admin \n 2. User\n ") ) )
+print("This is just a small survey before login")
+print(input("Did you donate the blood before?"))
+print(input("Are you ready to donate the blood in future?"))
+print("Donate blood save lives")
+a= int(input(print(" Enter your profile:\n 1. Admin \n 2. User\n ")))
 if a==1:
   print('Admin\n')
   b=int(input('Please check the following things and enter your required ones\n 1. for adding New Blood Bank\n 2. For Finding donors\n 3. For checking Blood Requests\n 4. Exit\n'))
@@ -13,6 +17,11 @@ if a==1:
     print('Warning! Please enter a valid choice ')
 if a==2:
   print('User')
+  print(input('Please enter your name:'))
+  print(int(input('Please enter your age')))
+  print(int(input('Please enter your phone number')))
+  print(int(input('Please enter the OTP sent to your phone number')))
+  print('Now you can proceed')
   c=int(input('Please check the following things and enter your required ones\n 1. for asking Blood\n 2. for donating Blood\n 3. for seeing blood Requests\n 4. Exit\n'))
   if c==1:
     request=input('Please enter your blood group in which you want:')
